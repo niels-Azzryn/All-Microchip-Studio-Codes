@@ -1,0 +1,527 @@
+
+Pruefung.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800200  00800200  00000212  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001be  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000212  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000244  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000284  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000d4e  00000000  00000000  000002a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000b88  00000000  00000000  00000ff2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000003eb  00000000  00000000  00001b7a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00001f68  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000640  00000000  00000000  00001f8c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000002c4  00000000  00000000  000025cc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000010  00000000  00000000  00002890  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	71 c0       	rjmp	.+226    	; 0xe4 <__ctors_end>
+   2:	00 00       	nop
+   4:	79 c0       	rjmp	.+242    	; 0xf8 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	77 c0       	rjmp	.+238    	; 0xf8 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	75 c0       	rjmp	.+234    	; 0xf8 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	73 c0       	rjmp	.+230    	; 0xf8 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	71 c0       	rjmp	.+226    	; 0xf8 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	6f c0       	rjmp	.+222    	; 0xf8 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	6d c0       	rjmp	.+218    	; 0xf8 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	6b c0       	rjmp	.+214    	; 0xf8 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	69 c0       	rjmp	.+210    	; 0xf8 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	67 c0       	rjmp	.+206    	; 0xf8 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	65 c0       	rjmp	.+202    	; 0xf8 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	63 c0       	rjmp	.+198    	; 0xf8 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	61 c0       	rjmp	.+194    	; 0xf8 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	5f c0       	rjmp	.+190    	; 0xf8 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	5d c0       	rjmp	.+186    	; 0xf8 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	5b c0       	rjmp	.+182    	; 0xf8 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	59 c0       	rjmp	.+178    	; 0xf8 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	57 c0       	rjmp	.+174    	; 0xf8 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	55 c0       	rjmp	.+170    	; 0xf8 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	53 c0       	rjmp	.+166    	; 0xf8 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	51 c0       	rjmp	.+162    	; 0xf8 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	4f c0       	rjmp	.+158    	; 0xf8 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	4d c0       	rjmp	.+154    	; 0xf8 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	4b c0       	rjmp	.+150    	; 0xf8 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	49 c0       	rjmp	.+146    	; 0xf8 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	47 c0       	rjmp	.+142    	; 0xf8 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	45 c0       	rjmp	.+138    	; 0xf8 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	43 c0       	rjmp	.+134    	; 0xf8 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	41 c0       	rjmp	.+130    	; 0xf8 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	3f c0       	rjmp	.+126    	; 0xf8 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	3d c0       	rjmp	.+122    	; 0xf8 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	3b c0       	rjmp	.+118    	; 0xf8 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	39 c0       	rjmp	.+114    	; 0xf8 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	37 c0       	rjmp	.+110    	; 0xf8 <__bad_interrupt>
+  8a:	00 00       	nop
+  8c:	35 c0       	rjmp	.+106    	; 0xf8 <__bad_interrupt>
+  8e:	00 00       	nop
+  90:	33 c0       	rjmp	.+102    	; 0xf8 <__bad_interrupt>
+  92:	00 00       	nop
+  94:	31 c0       	rjmp	.+98     	; 0xf8 <__bad_interrupt>
+  96:	00 00       	nop
+  98:	2f c0       	rjmp	.+94     	; 0xf8 <__bad_interrupt>
+  9a:	00 00       	nop
+  9c:	2d c0       	rjmp	.+90     	; 0xf8 <__bad_interrupt>
+  9e:	00 00       	nop
+  a0:	2b c0       	rjmp	.+86     	; 0xf8 <__bad_interrupt>
+  a2:	00 00       	nop
+  a4:	29 c0       	rjmp	.+82     	; 0xf8 <__bad_interrupt>
+  a6:	00 00       	nop
+  a8:	27 c0       	rjmp	.+78     	; 0xf8 <__bad_interrupt>
+  aa:	00 00       	nop
+  ac:	25 c0       	rjmp	.+74     	; 0xf8 <__bad_interrupt>
+  ae:	00 00       	nop
+  b0:	23 c0       	rjmp	.+70     	; 0xf8 <__bad_interrupt>
+  b2:	00 00       	nop
+  b4:	21 c0       	rjmp	.+66     	; 0xf8 <__bad_interrupt>
+  b6:	00 00       	nop
+  b8:	1f c0       	rjmp	.+62     	; 0xf8 <__bad_interrupt>
+  ba:	00 00       	nop
+  bc:	1d c0       	rjmp	.+58     	; 0xf8 <__bad_interrupt>
+  be:	00 00       	nop
+  c0:	1b c0       	rjmp	.+54     	; 0xf8 <__bad_interrupt>
+  c2:	00 00       	nop
+  c4:	19 c0       	rjmp	.+50     	; 0xf8 <__bad_interrupt>
+  c6:	00 00       	nop
+  c8:	17 c0       	rjmp	.+46     	; 0xf8 <__bad_interrupt>
+  ca:	00 00       	nop
+  cc:	15 c0       	rjmp	.+42     	; 0xf8 <__bad_interrupt>
+  ce:	00 00       	nop
+  d0:	13 c0       	rjmp	.+38     	; 0xf8 <__bad_interrupt>
+  d2:	00 00       	nop
+  d4:	11 c0       	rjmp	.+34     	; 0xf8 <__bad_interrupt>
+  d6:	00 00       	nop
+  d8:	0f c0       	rjmp	.+30     	; 0xf8 <__bad_interrupt>
+  da:	00 00       	nop
+  dc:	0d c0       	rjmp	.+26     	; 0xf8 <__bad_interrupt>
+  de:	00 00       	nop
+  e0:	0b c0       	rjmp	.+22     	; 0xf8 <__bad_interrupt>
+	...
+
+000000e4 <__ctors_end>:
+  e4:	11 24       	eor	r1, r1
+  e6:	1f be       	out	0x3f, r1	; 63
+  e8:	cf ef       	ldi	r28, 0xFF	; 255
+  ea:	d1 e2       	ldi	r29, 0x21	; 33
+  ec:	de bf       	out	0x3e, r29	; 62
+  ee:	cd bf       	out	0x3d, r28	; 61
+  f0:	00 e0       	ldi	r16, 0x00	; 0
+  f2:	0c bf       	out	0x3c, r16	; 60
+  f4:	02 d0       	rcall	.+4      	; 0xfa <main>
+  f6:	61 c0       	rjmp	.+194    	; 0x1ba <_exit>
+
+000000f8 <__bad_interrupt>:
+  f8:	83 cf       	rjmp	.-250    	; 0x0 <__vectors>
+
+000000fa <main>:
+
+
+int main(void)
+{
+	//Hardware initialisieren
+	DDR_LED_LOW_BYTE=ALLE_AUSGANG;
+  fa:	8f ef       	ldi	r24, 0xFF	; 255
+  fc:	81 b9       	out	0x01, r24	; 1
+	DDR_LED_HIGH_BYTE=ALLE_AUSGANG;
+  fe:	84 b9       	out	0x04, r24	; 4
+	DDR_SCHALTER=ALLE_EINGANG;
+ 100:	17 b8       	out	0x07, r1	; 7
+	uint8_t schalter_wertigkeit_2	= 0;
+	uint8_t schalter_wertigkeit_4	= 0;
+	uint8_t schalter_wertigkeit_8	= 0;
+	
+	//zusätzliche Variabeln für z.B. rechnungen
+	uint8_t zweiter_ring	= 0;
+ 102:	70 e0       	ldi	r23, 0x00	; 0
+	uint8_t heizstufe_5		= 0;
+	
+//Eingabe
+
+	//setzt den wert von inschalter auf den binären wert von PINC
+	inschalter = SCHALTER;
+ 104:	26 b1       	in	r18, 0x06	; 6
+	
+	//sagt ob bestimmter schalter aktiviert ist mit 0 oder 1
+	on_off_schalter			= inschalter & MASKE_SCHALTER_S5;
+ 106:	42 2f       	mov	r20, r18
+ 108:	41 70       	andi	r20, 0x01	; 1
+	schalter_wertigkeit_1	= inschalter & MASKE_SCHALTER_S7;
+	schalter_wertigkeit_2	= inschalter & MASKE_SCHALTER_S8;
+ 10a:	82 2f       	mov	r24, r18
+ 10c:	88 70       	andi	r24, 0x08	; 8
+	schalter_wertigkeit_4	= inschalter & MASKE_SCHALTER_S9;
+ 10e:	32 2f       	mov	r19, r18
+ 110:	30 71       	andi	r19, 0x10	; 16
+	schalter_wertigkeit_8	= inschalter & MASKE_SCHALTER_S10;
+ 112:	92 2f       	mov	r25, r18
+ 114:	90 72       	andi	r25, 0x20	; 32
+	hot_or_cold_schalter	= inschalter & MASKE_SCHALTER_S6;
+ 116:	52 2f       	mov	r21, r18
+ 118:	52 70       	andi	r21, 0x02	; 2
+	
+	
+//Verarbeitung
+
+	//inschalter_7bis10 bekommt den wert von schalter 7 bis 10
+	inschalter_7bis10 = ((schalter_wertigkeit_1>>2)+(schalter_wertigkeit_2>>2)+(schalter_wertigkeit_4>>2)+(schalter_wertigkeit_8>>2));
+ 11a:	22 fb       	bst	r18, 2
+ 11c:	22 27       	eor	r18, r18
+ 11e:	20 f9       	bld	r18, 0
+ 120:	86 95       	lsr	r24
+ 122:	86 95       	lsr	r24
+ 124:	82 0f       	add	r24, r18
+ 126:	36 95       	lsr	r19
+ 128:	36 95       	lsr	r19
+ 12a:	83 0f       	add	r24, r19
+ 12c:	96 95       	lsr	r25
+ 12e:	96 95       	lsr	r25
+ 130:	89 0f       	add	r24, r25
+	
+	//wenn inschalter_7bis10 den Wert 15 hat wird der zweite Ring aktiviert(variabel:zweiter_ring) oder deaktiviert wenn es nicht der fall ist
+	if(inschalter_7bis10==15){
+ 132:	8f 30       	cpi	r24, 0x0F	; 15
+ 134:	09 f4       	brne	.+2      	; 0x138 <main+0x3e>
+		zweiter_ring = LED_7;
+ 136:	70 e8       	ldi	r23, 0x80	; 128
+	}
+	if(on_off_schalter == 0){
+ 138:	41 11       	cpse	r20, r1
+ 13a:	01 c0       	rjmp	.+2      	; 0x13e <main+0x44>
+		zweiter_ring = 0;
+ 13c:	70 e0       	ldi	r23, 0x00	; 0
+	}
+	
+	//inschalter_7bis10 durch 2 rechnen damit werte von 0-7 entstehen
+	inschalter_7bis10 = inschalter_7bis10/2;
+ 13e:	86 95       	lsr	r24
+	
+	//der gerechnete Wert von inschalter_7bis10 wird ausgelesen und aktiviert für jeden zusatnd von 1-7 eine bestimmte anzahl LED
+	switch (inschalter_7bis10){
+ 140:	83 30       	cpi	r24, 0x03	; 3
+ 142:	b1 f0       	breq	.+44     	; 0x170 <main+0x76>
+ 144:	28 f4       	brcc	.+10     	; 0x150 <main+0x56>
+ 146:	81 30       	cpi	r24, 0x01	; 1
+ 148:	29 f1       	breq	.+74     	; 0x194 <main+0x9a>
+ 14a:	82 30       	cpi	r24, 0x02	; 2
+ 14c:	59 f0       	breq	.+22     	; 0x164 <main+0x6a>
+ 14e:	04 c0       	rjmp	.+8      	; 0x158 <main+0x5e>
+ 150:	84 30       	cpi	r24, 0x04	; 4
+ 152:	a1 f0       	breq	.+40     	; 0x17c <main+0x82>
+ 154:	88 30       	cpi	r24, 0x08	; 8
+ 156:	c0 f0       	brcs	.+48     	; 0x188 <main+0x8e>
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+	uint8_t heizstufe_5		= 0;
+ 158:	80 e0       	ldi	r24, 0x00	; 0
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+ 15a:	20 e0       	ldi	r18, 0x00	; 0
+    while (1) 
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+ 15c:	30 e0       	ldi	r19, 0x00	; 0
+ 
+    while (1) 
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+ 15e:	90 e0       	ldi	r25, 0x00	; 0
+
+ 
+    while (1) 
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+ 160:	60 e0       	ldi	r22, 0x00	; 0
+ 162:	1d c0       	rjmp	.+58     	; 0x19e <main+0xa4>
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+	uint8_t heizstufe_5		= 0;
+ 164:	80 e0       	ldi	r24, 0x00	; 0
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+ 166:	20 e0       	ldi	r18, 0x00	; 0
+    while (1) 
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+ 168:	30 e0       	ldi	r19, 0x00	; 0
+		case 1:
+		heizstufe_1=LED_2;
+		break;
+		case 2:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+ 16a:	98 e0       	ldi	r25, 0x08	; 8
+	switch (inschalter_7bis10){
+		case 1:
+		heizstufe_1=LED_2;
+		break;
+		case 2:
+		heizstufe_1=LED_2;
+ 16c:	64 e0       	ldi	r22, 0x04	; 4
+		heizstufe_2=LED_3;
+		break;
+ 16e:	17 c0       	rjmp	.+46     	; 0x19e <main+0xa4>
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+	uint8_t heizstufe_5		= 0;
+ 170:	80 e0       	ldi	r24, 0x00	; 0
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+ 172:	20 e0       	ldi	r18, 0x00	; 0
+		heizstufe_2=LED_3;
+		break;
+		case 3:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+ 174:	30 e1       	ldi	r19, 0x10	; 16
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		break;
+		case 3:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+ 176:	98 e0       	ldi	r25, 0x08	; 8
+		case 2:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		break;
+		case 3:
+		heizstufe_1=LED_2;
+ 178:	64 e0       	ldi	r22, 0x04	; 4
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		break;
+ 17a:	11 c0       	rjmp	.+34     	; 0x19e <main+0xa4>
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+	uint8_t heizstufe_5		= 0;
+ 17c:	80 e0       	ldi	r24, 0x00	; 0
+		break;
+		case 4:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		heizstufe_4=LED_5;
+ 17e:	20 e2       	ldi	r18, 0x20	; 32
+		heizstufe_3=LED_4;
+		break;
+		case 4:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+ 180:	30 e1       	ldi	r19, 0x10	; 16
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		break;
+		case 4:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+ 182:	98 e0       	ldi	r25, 0x08	; 8
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		break;
+		case 4:
+		heizstufe_1=LED_2;
+ 184:	64 e0       	ldi	r22, 0x04	; 4
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		heizstufe_4=LED_5;
+		break;
+ 186:	0b c0       	rjmp	.+22     	; 0x19e <main+0xa4>
+		case 7:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		heizstufe_4=LED_5;
+		heizstufe_5=LED_6;
+ 188:	80 e4       	ldi	r24, 0x40	; 64
+		case 6:
+		case 7:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		heizstufe_4=LED_5;
+ 18a:	20 e2       	ldi	r18, 0x20	; 32
+		case 5:
+		case 6:
+		case 7:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+ 18c:	30 e1       	ldi	r19, 0x10	; 16
+		break;
+		case 5:
+		case 6:
+		case 7:
+		heizstufe_1=LED_2;
+		heizstufe_2=LED_3;
+ 18e:	98 e0       	ldi	r25, 0x08	; 8
+		heizstufe_4=LED_5;
+		break;
+		case 5:
+		case 6:
+		case 7:
+		heizstufe_1=LED_2;
+ 190:	64 e0       	ldi	r22, 0x04	; 4
+		heizstufe_2=LED_3;
+		heizstufe_3=LED_4;
+		heizstufe_4=LED_5;
+		heizstufe_5=LED_6;
+		break;
+ 192:	05 c0       	rjmp	.+10     	; 0x19e <main+0xa4>
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+	uint8_t heizstufe_5		= 0;
+ 194:	80 e0       	ldi	r24, 0x00	; 0
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+	uint8_t heizstufe_4		= 0;
+ 196:	20 e0       	ldi	r18, 0x00	; 0
+    while (1) 
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+	uint8_t heizstufe_3		= 0;
+ 198:	30 e0       	ldi	r19, 0x00	; 0
+ 
+    while (1) 
+    {
+	//Variabeln für Rechnungen/LED/ Heizstufen
+	uint8_t heizstufe_1		= 0;
+	uint8_t heizstufe_2		= 0;
+ 19a:	90 e0       	ldi	r25, 0x00	; 0
+	inschalter_7bis10 = inschalter_7bis10/2;
+	
+	//der gerechnete Wert von inschalter_7bis10 wird ausgelesen und aktiviert für jeden zusatnd von 1-7 eine bestimmte anzahl LED
+	switch (inschalter_7bis10){
+		case 1:
+		heizstufe_1=LED_2;
+ 19c:	64 e0       	ldi	r22, 0x04	; 4
+		heizstufe_5=LED_6;
+		break;
+	}
+	
+	//fässt alle LED Variabeln in eine einzige Variabel zusammen
+	heizstufe_total = (heizstufe_1+heizstufe_2+heizstufe_3+heizstufe_4+heizstufe_5);
+ 19e:	96 0f       	add	r25, r22
+ 1a0:	93 0f       	add	r25, r19
+ 1a2:	92 0f       	add	r25, r18
+ 1a4:	89 0f       	add	r24, r25
+	
+	
+//Ausgabe
+
+	//wenn on_off aktiviert ist läuft die schaltung sonst nicht
+	if(on_off_schalter==1){
+ 1a6:	41 30       	cpi	r20, 0x01	; 1
+ 1a8:	19 f4       	brne	.+6      	; 0x1b0 <main+0xb6>
+		//eine bestimmte LED wird aktiviert, auserhalb des if's weil es auch aktiviert werden muss wenn die schaltung deaktiviert ist
+		PORT_LED_LOW_BYTE = (power_led|heizstufe_total|zweiter_ring); 
+ 1aa:	84 2b       	or	r24, r20
+ 1ac:	87 2b       	or	r24, r23
+ 1ae:	82 b9       	out	0x02, r24	; 2
+	}
+	//eine bestimmte LED wird aktiviert, auserhalb des if's weil es auch aktiviert werden muss wenn die schaltung deaktiviert ist
+	PORT_LED_LOW_BYTE |= heiss_led; 
+ 1b0:	82 b1       	in	r24, 0x02	; 2
+ 1b2:	85 2b       	or	r24, r21
+ 1b4:	82 b9       	out	0x02, r24	; 2
+	
+	//alles LED werden ausgeschaltet
+	PORT_LED_LOW_BYTE = 0;
+ 1b6:	12 b8       	out	0x02, r1	; 2
+}
+ 1b8:	a5 cf       	rjmp	.-182    	; 0x104 <main+0xa>
+
+000001ba <_exit>:
+ 1ba:	f8 94       	cli
+
+000001bc <__stop_program>:
+ 1bc:	ff cf       	rjmp	.-2      	; 0x1bc <__stop_program>
